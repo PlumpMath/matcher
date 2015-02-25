@@ -1,0 +1,20 @@
+{
+  "name": "matcher",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "build": "browserify -t flowcheck -t [reactify --strip-types --harmony] js/app.jsx -o bundle.js"
+  },
+  "author": "polyrhythm",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.0-beta.1",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "flowcheck": "^0.2.3",
+    "react-tools": "^0.12.2",
+    "reactify": "^1.0.0"
+  }
+}
